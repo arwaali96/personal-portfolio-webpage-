@@ -1,0 +1,155 @@
+<head>
+    <style>
+        #welcome-section {
+            background-color: black;
+            height: 100vh;
+        }
+
+        #welcome-section h1 {
+            text-align: center;
+            font-size: 50px;
+            color: #FF6666;
+        }
+
+        #welcome-section p {
+            text-align: center;
+            font-size: 20px;
+            font-family: bradley hand;
+            color: white;
+        }
+
+        #projects {
+            background-color: #990033;
+            padding-bottom: 150px;
+            padding-top: 80px;
+        }
+
+        #projects div {
+            display: grid;
+            grid-template-columns: auto auto;
+            text-align: center;
+        }
+
+        #project_1 {
+            grid-column: 1/2;
+            color: white;
+        }
+
+        #project_2 {
+            grid-column: 2/3;
+            color: white;
+        }
+
+        #project_3 {
+            grid-column: 3/4;
+            color: white;
+        }
+
+        #projects header {
+            font-size: 30px;
+            text-align: center;
+            color: #990033;
+            background-color: white;
+        }
+
+        .project-tile {
+            border-style: solid;
+            border-color: white;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-family: fantasy;
+        }
+
+        @media (min-width: 300px) {
+            nav {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                background-color: #FF6666;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+
+        nav a {
+            color: black;
+            font-family: arial;
+            font-size: 17px;
+        }
+
+        #contact {
+            background: url(https://www.publicdomainpictures.net/pictures/310000/velka/chevrons-zigzag-pattern-pink.jpg);
+            padding-bottom: 150px;
+        }
+
+        #contact header {
+            font-family: marker felt;
+            font-size: 80px;
+            text-align: center;
+            color: #FF6666;
+            padding-top: 120px;
+        }
+
+        #github {
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            font-style: italic
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="welcome-section">
+            <h1>
+                <br><br><br>
+                Welcome, I'm Arwa!
+            </h1>
+            <p>
+                a web developer excited to share my progress
+            </p>
+        </section>
+
+        <section id="projects">
+            <header>
+                here are some of my projects:
+            </header>
+            <br><br><br><br>
+            <div>
+                <a id="project_1" target="_blank" class="project-tile" href="https://codepen.io/arwaali96/pen/MWywyLp">
+                    Python Documentation Page
+                </a>
+                <a id="project_2" target="_blank" class="project-tile" href="https://codepen.io/arwaali96/pen/ZEWGEba">
+                    Tea Product Page
+                </a>
+                <a id="project_3" target="_blank" class="project-tile" href="https://codepen.io/arwaali96/pen/MWyWqPK">
+                    Quarantine Survey
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <header>
+                keep in touch :)
+            </header>
+            <br><br>
+            <p id="github">
+                <a id="profile-link" href="https://github.com/arwaali96" target="_blank">Github</a>
+            </p>
+        </section>
+    </main>
+
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        &nbsp&nbsp&nbsp&nbsp
+        <a href="#projects">Projects</a>
+        &nbsp&nbsp&nbsp&nbsp
+        <a href="#contact">Contact</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+    </nav>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+</body>
